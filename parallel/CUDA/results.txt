@@ -1,0 +1,21 @@
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ nvcc sieve.cu
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ ./a.out 10
+times 10 - avg time = 6.68960 ms, 10 threads
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ ./a.out 100
+times 10 - avg time = 5.50760 ms, 100 threads
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ ./a.out 1000
+times 10 - avg time = 6.67410 ms, 1000 threads
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ ./a.out 10000
+times 10 - avg time = 6.75640 ms, 1024 threads
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ ./a.out 100000
+times 10 - avg time = 7.95210 ms, 1024 threads
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ ./a.out 1000000
+times 10 - avg time = 30.25550 ms, 1024 threads
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ ./a.out 10000000
+times 10 - avg time = 448.50280 ms, 1024 threads
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ nano sieve.cu
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ nvcc sieve.cu
+ubuntu@ip-172-31-41-114:~/ramoncuda/sieve$ ./a.out 10000000 > 10msievecuda.txt

@@ -1,0 +1,2 @@
+clang -Xpreprocessor -fopenmp -lomp openmpsieve.c -o ompsieve.out
+
