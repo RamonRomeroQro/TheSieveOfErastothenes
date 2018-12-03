@@ -141,7 +141,7 @@ public class Main {
 *--------------------------------------------------------------*/
 
 class ForkSieve extends RecursiveAction {
-	private static final long MIN = 10;
+	private static final long MIN = 10000;
   public int [] arr;
   public int ct=-1;
   public int begin;
